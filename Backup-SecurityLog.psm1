@@ -86,6 +86,7 @@ function Show-SecurityHelp {
     Write-Host("-FailOnly (Switch)     | Only view Failed events")
     Write-Host("-SuccessOnly (Switch)  | Only View Successful Events")
     Write-Host("-Id (String)           | List of IDs to read. Defaults to 'Standard' Other options include 'All' or an array of IDs such as '4624','4625','5061'")
+    Write-Host("-Help (Switch)         | Show this menu")
     Write-Host("`nExamples:")
     Write-Host("Read-SecurityLog -FailOnly -Id '4624'")
     Write-Host("Read-SecurityLog -SuccessOnly")
