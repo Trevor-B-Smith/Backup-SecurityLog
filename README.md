@@ -6,6 +6,7 @@ Powershell script to backup and read windows security logs
 ## To install: 
 ##### NOTE: you cannot simply pull this branch and run it since the code is unsigned.
 - Open Powershell and run `$env:PSModulePath`
+ * If this gives multiple directories, choose the one with System32
 - Create a Directory named `Backup-SecurityLog` in the directory displayed, this is your device's module path, it should go inside a directory labeled `Modules`
 - Move the file named `Backup-SecurityLog.psm1` into this directory, this is your script that will run (you may need admin priveleges to do this)
 - Open Powershell and run `Import-Module Backup-SecurityLog`
