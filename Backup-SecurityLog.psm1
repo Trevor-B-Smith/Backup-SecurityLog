@@ -1,4 +1,3 @@
-# . $PSScriptRoot\Backup-SecurityLog.ps1
 function Backup-SecurityLog {
     $directoryLocation = "C:\Windows\System32\SecurityLogsBackup"
     $directoryExists = Test-Path $directoryLocation -PathType Container
@@ -12,10 +11,6 @@ function Backup-SecurityLog {
 } 
 
 function Read-SecurityLog {
-
-    <#
-    
-    #>
     [CmdletBinding()]
     param (
         [ValidateNotNullOrEmpty()]
